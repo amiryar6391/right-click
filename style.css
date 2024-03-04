@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('./asset/font/Poppins-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    
+    background-color: #8a543f;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+    background-color: #fff;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.menu{
+    list-style: none;
+    margin: 15px;
+}
+.menu >li{
+    padding: 10px 0;
+}
+.menu >li:hover{
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu >li i{
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.setting{
+    border-top: 1px solid rgb(230, 230, 230);
+    margin-top: 5px;
+}
+.setting li{
+    padding: 10px 0;
+    margin-top: 10px;
+}
+.setting li:hover{
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.setting >li i{
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.items{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-items{
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    left: 220px;
+    top: -30px;
+}
+.items:hover .drop-items{
+    display: block;
+    position: absolute;
+   
+}
+.drop-items li{
+    padding: 5px;
+    margin: 5px;
+    
+}
+.drop-items li:hover{
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+
+}
