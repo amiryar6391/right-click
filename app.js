@@ -2,7 +2,7 @@ let contmenu=document.querySelector('.container')
 let drop=document.querySelector('.drop-items')
 
 document.addEventListener('contextmenu',(e)=>{
-    // e.preventDefault();
+    e.preventDefault();
     let x=e.clientX
     let y=e.clientY
     let viewx=innerWidth
